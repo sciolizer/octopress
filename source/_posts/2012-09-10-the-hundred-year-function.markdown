@@ -102,12 +102,12 @@ In fact, the solve function can find a more efficient implementation on your beh
 
 ``` python My computer is smarter than Kadane, if you'll just be patient.
 def steps(algorithm, input):
-  (_result, steps) = eval_with_steps(algorithm(input))
+  (_result, steps) = eval_with_steps(algorithm, input)
   return steps
 
 def is_fast_max_subarray(algorithm):
   # Check that algorithm is equivalent to the_obvious_max_subarray
-  if solve(lambda input: the_obvious_max_subarray(input) != algorithm(input), 4 * 5):
+  if solve(lambda input: the_obvious_max_subarray(input) != eval(algorithm, input), 4 * 5):
     return False
   # Check that algorithm is faster than the_obvious_max_subarray
   for example in example_inputs:
