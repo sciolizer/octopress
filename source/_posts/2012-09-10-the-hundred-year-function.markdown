@@ -391,9 +391,18 @@ If you want to use languages which are on the evolutionary path toward the langu
 you should consider C# 4.0, since it is the only mainstream language I know of that comes with
 a built-in [theorem prover](http://msdn.microsoft.com/en-us/library/dd264808.aspx).
 
-Please contact me at [JoshBBall@gmail.com](mailto:JoshBBall@gmail.com) if you have additional ideas on how to build
-the `solve` function, you know where I can find prior art, you want to correct a misunderstanding I have, or you just
-want to tell me that I'm a crank with no clue.
+Update (2013-11-24):
+
+I am happy to report that I am not alone in having these ideas. "Search-assisted programming",
+"solver aided languages", "computer augmented programming", and "satisfiability based inductive
+program synthesis" are some of the
+names used to describe these techniques. [Emily Torlak](http://people.csail.mit.edu/emina/) has
+developed an exciting language called
+[Rosette](https://excape.cis.upenn.edu/documents/rosette_Emina.pdf), which is a dsl for creating
+solver aided languages. [Ras Bodik](http://www.cs.berkeley.edu/~bodik/) has also done much work
+combining constraint solvers and programming languages. The [ExCAPE](https://excape.cis.upenn.edu/)
+project focuses on program synthesis. Thanks to [Jimmy Koppel](http://www.jameskoppel.com/) for
+letting me know these people exist.
 
 -----------------------
 
