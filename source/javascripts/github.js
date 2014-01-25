@@ -18,6 +18,7 @@ var github = (function(){
           if (!data || !data.data) { return; }
           for (var i = 0; i < data.data.length; i++) {
             if (options.skip_forks && data.data[i].fork) { continue; }
+            if (jQuery.inArray(data.data[i].name, options.shown_repos) == -1) { continue; }
             repos.push(data.data[i]);
           }
           repos.sort(function(a, b) {

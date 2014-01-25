@@ -67,6 +67,7 @@ github_user: sciolizer
 github_repo_count: 0
 github_show_profile_link: true
 github_skip_forks: true
+github_shown_repos: [lazy-interpreter, intellihack, exact_cover] # list of repos to show in sidebar
 
 # Twitter
 twitter_user:
