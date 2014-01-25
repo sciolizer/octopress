@@ -170,7 +170,7 @@ taskIds_65495_new = taskIds_65495 ++ (map taskId $
   task : filter (\t -> t.owner == userId) [])
 taskIds_65495_new = taskIds_65495 ++ (map taskId [task])
 taskIds_65495_new = taskIds_65495 ++ task.id
--- SADD("taskIds_65495", task.id)
+-- SADD taskIds_65495 ${task.id}
 ```
 
 In the false case, `userId` remains unbound, but that's ok, because the expression reduces to a no-op:
