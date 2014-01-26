@@ -21,4 +21,8 @@ to read locally:
 
 rake preview # port 4000
 
+to publish:
 
+rake deploy # there's some build command you're supposed to run before this,
+            # but it's not necessary as long as you `rake preview` has
+            # picked up your changes.
