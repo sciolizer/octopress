@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Automatic redis, part two"
+title: "Automatic redis, part two: sorting and data structures"
 date: 2014-01-25 12:40:47 -0800
 comments: true
 categories: [artificial intelligence, automatic redis]

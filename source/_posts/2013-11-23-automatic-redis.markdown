@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Automatic redis, part one"
+title: "Automatic redis, part one: inserts and cache key extraction"
 date: 2013-11-23 21:04:08 -0800
 comments: true
 categories: [artificial intelligence, automatic redis]
