@@ -6,6 +6,10 @@ comments: true
 categories: [artificial intelligence, automatic redis]
 ---
 
+This post is part of a sequence I am calling
+[automatic redis](/blog/categories/automatic-redis), which is my attempt to solve
+the cache invalidation problem.
+
 In my [previous post](/blog/2013/11/23/automatic-redis/), I demonstrated that a
 library could infer cache update operations from database insert operations by performing
 algebraic manipulations on the queries that define the cache keys. The algebraic

@@ -5,6 +5,10 @@ date: 2013-11-23 21:04:08 -0800
 comments: true
 categories: [artificial intelligence, automatic redis]
 ---
+This post is part of a sequence I am calling
+[automatic redis](/blog/categories/automatic-redis), which is my attempt to solve
+the cache invalidation problem.
+
 These are some initial thoughts on how to automate cache updates.
 The question I want to answer is this: given a mapping from redis
 keys to the queries that produce their values, how can I
