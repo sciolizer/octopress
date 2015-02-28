@@ -163,7 +163,7 @@ data QO input output where
   -- Mappings which scramble the order are also allowed, as long as we
   -- have a way to recover the order. i.e. 'a -> c' has to be monotonic,
   -- even though 'a -> b' and 'b -> c' do not.
-  SelectReversible       :: Expr (a -> b) (b -> c) -> QO (seq a) (seq b)
+  SelectReversible       :: Expr (a -> b) -> Expr (b -> c) -> QO (seq a) (seq b)
 ```
 
 A few more data structures and we will have all the pieces necessary for
@@ -180,7 +180,7 @@ data Query output where
 -- convenience constructor
 (+>) = Compose
 
-data CacheKeyDefinition = {
+data CacheKeyDefinition = CacheKeyDefinition {
   keyTemplate :: String, -- e.g. "taskIds.{userId}"
   query :: Query -- e.g. from tasks where task.userId = userId select task.id
 }
