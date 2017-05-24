@@ -3,7 +3,7 @@ layout: post
 title: "The History of the Frame Problem"
 date: 2017-03-05 18:56:43 -0700
 comments: true
-categories: [history, classical ai, frame]
+categories: [history, artificial intelligence, frame]
 ---
 
 This is my synopsis of the paper, "[The History of the Frame Problem](https://staff.fnwi.uva.nl/b.bredeweg/pdf/BSc/20032004/KamermansSchmits.pdf)".
